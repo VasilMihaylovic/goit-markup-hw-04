@@ -502,7 +502,7 @@ margin-right: 120px;}
   gap: 16px;}
 
   .social-list-link:hover,
-  .social-list-link:focus{background-color:#31D0AA;
+  .social-list-link:focus {background-color:#404bbf;;
   }
 
 .social-list-icon{ fill: #f4f4fd;
