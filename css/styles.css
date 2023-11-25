@@ -489,8 +489,8 @@ margin-right: 120px;}
   /* 150% */
   letter-spacing: 0.02em;
 }
-/*.social-group-conteiher{align-items: baseline;
-  margin-right: 120px;}*/
+.social-group-conteiher{
+  margin-right: 120px;}
 .social-group{color: var(--WHITE, #FFF);
   margin-bottom: 16px;
   font-size: 16px;
@@ -506,6 +506,8 @@ margin-right: 120px;}
   }
 
 .social-list-icon{ fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
   
 }
 .social-list-link{display: block;
