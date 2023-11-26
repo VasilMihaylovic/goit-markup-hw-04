@@ -114,6 +114,7 @@ background-color: #404bbf;
 border-radius: 2px;
 margin-left: auto;
 margin-right: auto;
+width: 100%;
 
 
 }
@@ -260,13 +261,6 @@ align-items: center;
   flex-shrink: 0;
   justify-content: center;
   margin-bottom: 8px;
-}
-.foto-icons{display: flex;
-  
-padding-top: 24px;
-padding-bottom: 24px;
-padding-left: 100px;
-padding-right: 100px;
 }
 
 .list-calc {
@@ -460,7 +454,29 @@ fill: #f4f4fd;}
   /* 150% */
   letter-spacing: 0.02em;
 }
-.overlay{position: absolute;
+
+.overlay{position: relative;
+  overflow: hidden;}
+
+  .p-name{position: absolute;
+    transform: translateY(100%);
+    width: 360px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+  color: var(--CLOUD, #F4F4FD);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 164px;
+    overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+/*.overlay{position: absolute;
 transform: translateY(100%);
 width: 360px;
 height: 300px;
@@ -490,7 +506,7 @@ color:#f4f4fd;
 
 transform: translateY(100%);
 transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .list-calc-portfolio {
   width: calc((100% - 48px) / 3);
@@ -499,9 +515,11 @@ transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
-.list-calc-portfolio:hover .overlay{transform: translateY(0%);
+/*.list-calc-portfolio:hover .overlay{transform: translateY(0%);
 box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
+ .list-calc-portfolio:hover .p-name{transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
 
 
 /*=========footer=======*/
